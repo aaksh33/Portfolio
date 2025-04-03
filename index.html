@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Protfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/daac703a29.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <!-- <script src="/index.js"></script> -->
+
+</head>
+
+<body>
+    <nav class="container" style="top: 0px; position: sticky; z-index: 1; width: 100%;">
+        <h1>Aakash</h1>
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul id="sidemenu">
+            <i class="fas fa-times" onclick="closemenu()"></i>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <p>Full Stact Web Developer</p>
+                <h1>Hi, I'm <span>Aakash Singh </span><br>
+                    A passionate web developer</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------about me----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/pic5.png.jpeg" style="height: 40rem; width: 35rem; border-radius: 5%;">
+                </div>
+                <div class="about-col-2">
+                    <h1 style="text-align:left; font-size: 50px; padding:2rem 0 ;">About Me</h1>
+                    <p style="font-size: 1.5rem; padding: 2rem 0;">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Deleniti aspernatur praesentium voluptas placeat iure hic accusamus ullam delectus,
+                        voluptate eveniet enim animi amet, harum ex rem voluptatem quas rerum? Quae, harum. Nihil
+                        necessitatibus aperiam temporibus, nam nesciunt veniam officiis debitis repellat, inventore,
+                        sint facere iusto.</p>
+                    <div class="tab-titles " style="display: flex; margin: 20px 0 40px;">
+                        <p class="tab-links active-link" onclick="opentab('Skills')"
+                            style="margin-right: 40px; font-size: 20px; font-weight: 400; cursor: pointer; position: relative;">
+                            Skills</p>
+                        <p class="tab-links" onclick="opentab('Certificates')"
+                            style="margin-right: 40px; font-size: 20px; font-weight: 400; cursor: pointer; position: relative;">
+                            Certificates</p>
+                        <p class="tab-links" onclick="opentab('Education')"
+                            style="margin-right: 40px; font-size: 20px; font-weight: 400; cursor: pointer; position: relative;">
+                            Education</p>
+                    </div>
+                    <div class="tab-contents" id="Skills" style="margin-top: 2rem; display: block;">
+                        <ul>
+                            <li style="list-style: none; margin: 10px 0;"><span
+                                    style="color: #b54769; font-size: 14px;">Figma</span><br>Designing Web/App
+                                Interfaces</li>
+                            <li style="list-style: none; margin: 10px 0;"><span
+                                    style="color: #b54769; font-size: 14px;">Web Design</span><br> Full Stack Developer
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Certificates" style="margin-top: 2rem;">
+                        <ul>
+                            <li style="list-style: none; margin: 10px 0;"><span
+                                    style="color: #b54769; font-size: 14px;">HTML</span><br>HTML Certificate from
+                                Simplilearn</li>
+                            <li style="list-style: none; margin: 10px 0;"><span
+                                    style="color: #b54769; font-size: 14px;">CSS</span><br> CSS CErtificate from
+                                Simplilearn</li>
+                            <li style="list-style: none; margin: 10px 0;"><span
+                                    style="color: #b54769; font-size: 14px;">Java Script</span><br> Java Script
+                                CErtificate from Simplilearn</li>
+                            <li style="list-style: none; margin: 10px 0;"><span
+                                    style="color: #b54769; font-size: 14px;">Python</span><br> Python CErtificate from
+                                Simplilearn</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education" style="margin-top: 2rem;">
+                        <ul>
+                            <li style="list-style: none; margin: 10px 0;"><span
+                                    style="color: #b54769; font-size: 14px;">BCA</span><br>BCA from IGNOU (Indra Gandhi
+                                National Open University)</li>
+                            <li style="list-style: none; margin: 10px 0;"><span
+                                    style="color: #b54769; font-size: 14px;">12th</span><br> 12th from CBSE Board</li>
+                            <li style="list-style: none; margin: 10px 0;"><span
+                                    style="color: #b54769; font-size: 14px;">10th</span><br> 10th from CBSE Board</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+        <!-- -----------------services------------------- -->
+        <div id="services" style="padding: 30px 0;">
+            <div class="container">
+                <h1 class="sub-title" style="font-size: 40px;">My Services</h1>
+                <div class="services-list"
+                    style="display: grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)) ; grid-gap: 40px; margin-top: 50px;">
+                    <div>
+                        <i class="fas fa-code" style="font-size: 50px; margin-bottom: 30px;"></i>
+                        <h2 style="font-size: 30px; font-weight: 500; margin-bottom: 15px;">Web Development</h2>
+                        <p style="color: white; font-size: 12px; margin-top: 20px; display: inline-block;">Lorem ipsum
+                            dolor, sit amet consectetur adipisicing elit. Commodi sit quas consequatur consequuntur cum
+                            animi aliquam! Aspernatur mollitia debitis blanditiis amet veniam cum, incidunt tempora?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fab fa-app-store" style="font-size: 50px; margin-bottom: 30px;"></i>
+                        <h2 style="font-size: 30px; font-weight: 500; margin-bottom: 15px;">Designing Web/App Interfaces
+                        </h2>
+                        <p style="color: white; font-size: 12px; margin-top: 20px;display: inline-block;">Lorem ipsum
+                            dolor, sit amet consectetur adipisicing elit. Commodi sit quas consequatur consequuntur cum
+                            animi aliquam! Aspernatur mollitia debitis blanditiis amet veniam cum, incidunt tempora?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-crop-alt" style="font-size: 50px; margin-bottom: 30px;"></i>
+                        <h2 style="font-size: 30px; font-weight: 500; margin-bottom: 15px;">Photo and Video Editing</h2>
+                        <p style="color: white; font-size: 12px; margin-top: 20px;display: inline-block;">Lorem ipsum
+                            dolor, sit amet consectetur adipisicing elit. Commodi sit quas consequatur consequuntur cum
+                            animi aliquam! Aspernatur mollitia debitis blanditiis amet veniam cum, incidunt tempora?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- ------------portfolio----------------->
+        <div id="portfolio" style="padding: 50px 0;">
+            <div class="container">
+                <h1 class="sub-title" style="font-size: 40px;">My Work</h1>
+                <div class="work-list"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); grid-gap: 40px; margin-top: 50px;">
+                    <div class="work" style="border-radius: 10px; position: relative; overflow: hidden;">
+                        <img src="images/work.png.avif"
+                            style="width: 100%; height: 100%; border-radius: 10px; display: block; transition: transform 0.5s;">
+                        <div class="layer">
+                            <h3 style="font-weight: 500; margin-bottom: 20px;">Social Media App</h3>
+                            <p>This app connects you to the talented people around the world. Download it from play
+                                store. </p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" style="border-radius: 10px; position: relative; overflow: hidden;">
+                        <img src="images/work1.png.avif"
+                            style="width: 100%; height: 100%; border-radius: 10px; display: block;transition: transform 0.5s;">
+                        <div class="layer">
+                            <h3 style="font-weight: 500; margin-bottom: 20px;">Music App</h3>
+                            <p>This app connects you to the talented people around the world. Download it from play
+                                store. </p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" style="border-radius: 10px; position: relative; overflow: hidden;">
+                        <img src="images/work2.png.jpg"
+                            style="width: 100%;height: 100%; border-radius: 10px; display: block; transition: transform 0.5s;">
+
+                        <div class="layer">
+                            <h3 style="font-weight: 500; margin-bottom: 20px;">Online Shopping App</h3>
+                            <p>This app connects you to the talented people around the world. Download it from play
+                                store. </p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn"
+                    style="display: block; margin: 100px auto; width: fit-content;
+            border: 1px solid #ff004f;padding: 14px 60px; border-radius: 6px; text-decoration: none; color: #fff;font-size: 18px; transition: background 0.5s;">See
+                    More</a>
+            </div>
+        </div>
+        <!-- --------------contact----------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left" style="flex-basis: 35%;">
+                        <h1 class="sub-title" style="font-size: 50px;">Contact Me</h1>
+                        <p style="margin-top: 30px;"><i class="fas fa-paper-plane"
+                                style="color: #ff004f; margin-right: 15px; font-size: 25px;"></i>contact@example.com</p>
+                        <p style="margin-top: 30px;"><i class="fas fa-phone-square-alt"
+                                style="color: #ff004f; margin-right: 15px; font-size: 25px;"></i>0123456789</p>
+                        <div class="social-icons" style="margin-top: 30px; ">
+                            <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/resume.png.jpeg" download class="btn"
+                            style="display: block; margin-top:15px; width: fit-content;
+                border: 1px solid #ff004f;padding: 14px 50px; border-radius: 6px; text-decoration: none; color: #fff; transition: background 0.5s;">Download CV</a>
+                    </div>
+                    <div class="contact-right" style="flex-basis: 60%;">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn"
+                                style="display: block;width: fit-content;
+                border: 1px solid #ff004f; border-radius: 6px; text-decoration: none; color:#fff; background: #ff004f; transition: background 0.5s;cursor: pointer; padding: 14px 50px;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright"
+                style="width: 100%; text-align: center; padding: 25px 0; background: #262626;font-weight: 300; margin-top: 20px; color: #fff;">
+                <p>Copyright @ Aakash. Made with <i class="fas fa-heart" style="color: #ff004f;"></i> by Easy Tutorials
+                </p>
+            </div>
+        </div>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            var menuOpenIcon = document.querySelector(".fa-bars");
+            var menuCloseIcon = document.querySelector(".fa-times");
+
+            function openmenu() {
+                sidemenu.style.right = "0rem";
+                menuOpenIcon.style.display = "none";
+                menuCloseIcon.style.display = "block"; // Show close button when menu is opened
+            }
+
+            function closemenu() {
+                sidemenu.style.right = "-250px";
+                menuOpenIcon.style.display = "block"; // Show open button when menu is closed
+                menuCloseIcon.style.display = "none"; // Hide close button when menu is closed
+            }
+        </script>
+</body>
+
+</html>
