@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Personal Protfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/daac703a29.js" crossorigin="anonymous"></script>
@@ -239,6 +239,30 @@
                 sidemenu.style.right = "-250px";
                 menuOpenIcon.style.display = "block"; // Show open button when menu is closed
                 menuCloseIcon.style.display = "none"; // Hide close button when menu is closed
+            }
+
+            // Ensure only "Skills" tab is visible on page load
+            document.addEventListener("DOMContentLoaded", function () {
+                opentab('Skills');
+            });
+
+            function opentab(tabName) {
+                var tabContents = document.querySelectorAll('.tab-contents');
+                var tabLinks = document.querySelectorAll('.tab-links');
+
+                // Hide all tab contents
+                tabContents.forEach(function (content) {
+                    content.style.display = 'none';
+                });
+
+                // Remove active-link class from all tab links
+                tabLinks.forEach(function (link) {
+                    link.classList.remove('active-link');
+                });
+
+                // Show the selected tab content and add active-link class to the clicked tab
+                document.getElementById(tabName).style.display = 'block';
+                document.querySelector(`[onclick="opentab('${tabName}')"]`).classList.add('active-link');
             }
         </script>
 </body>
